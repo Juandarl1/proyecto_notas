@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nota{
+  background-color: #f5f68a;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
