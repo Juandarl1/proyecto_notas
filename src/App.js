@@ -1,15 +1,15 @@
 import {Listanota} from "./componentes/listaNota";
-import './index.css'
+// import '/App.css'
+
 
 
 function App() {
   return (
     <div className="App">
+      <header>
         <h1>Notas</h1>
+      </header>
         
-        <Listanota/>
-        <Listanota/>
-        <Listanota/>
         <Listanota/>
 
         </div>
