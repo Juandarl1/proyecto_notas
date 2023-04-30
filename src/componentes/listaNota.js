@@ -1,12 +1,13 @@
 import {Nota} from "./Nota";
 
-export const Listanota = () => {
+export const Listanota = ({notes}) => {
   return (
     <div className='Listanota'>
-      <Nota />
-      <Nota />
-      <Nota />
-      <Nota />
+      {notes.map((note)=>(
+      <Nota id={note.id} text={note.text} date={note.date} />
+      ))}
+
+  
     </div>
   );
 };
