@@ -1,4 +1,5 @@
 import {Nota} from "./Nota";
+import Agregarnota from "./agregarNota";
 
 export const Listanota = ({notes}) => {
   return (
@@ -7,7 +8,7 @@ export const Listanota = ({notes}) => {
       <Nota id={note.id} text={note.text} date={note.date} />
       ))}
 
-  
+      <Agregarnota />
     </div>
   );
 };

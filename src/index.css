@@ -15,14 +15,42 @@ code {
  grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+ 
 header{
   display:flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
 }
+.nota_nueva{
+  background: #67d7cc;
+  padding: 1rem;
+  height:170px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column; 
+  border-radius: 10px ;
+}
 
+textarea{
+  border: none;
+  resize: none;
+  background: #67d7cc;
+}
 
+textarea:focus{
+  outline: none;
+}
+
+.Guardar{
+  background-color: rgb(138, 168, 167);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
 .container {
 	max-width: 960px;
