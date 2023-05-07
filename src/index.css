@@ -52,6 +52,19 @@ textarea:focus{
   transition: all 0.3s ease;
 }
 
+.Guardar:hover{
+  background-color: rgb(138, 168, 167);
+  transform: scale(1.1);
+  color: white;
+  cursor:pointer;
+}
+
+.delete-icon:hover{
+  color: red;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .container {
 	max-width: 960px;
 	margin-right: auto;

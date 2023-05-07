@@ -20,6 +20,18 @@ const App=()=> {
     date:'01/04/2023'
   }
   ]);
+
+  const addnote=(text)=>{
+    const date=new Date();
+    const newNote={
+      id:nanoid(),
+      text:text,
+      date:date.toLocaleDateString()
+    };
+    const newNotes=[...notes,newNote];
+    setNotes(newNotes);  
+  };
+    
   return (
     
     <div className="App">
@@ -27,7 +39,7 @@ const App=()=> {
         <h1>Notas</h1>
       </header>
         
-        <Listanota notes={notes}/>
+        <Listanota notes={notes} mantenernota={addnote}/>
 
         </div>
     
