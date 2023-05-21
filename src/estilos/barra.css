@@ -1,0 +1,19 @@
+.barra-busqueda{
+    display:flex;
+    align-items: center;
+    margin-bottom: 2.5em;
+    border-radius: 10px;
+    background-color: rgb(169, 184, 183);
+    
+  }
+  
+  .barra-busqueda input{
+    border: none;
+    resize: none;
+    background-color:rgb(169, 184, 183) ;
+  }
+  
+  .barra-busqueda input:focus{
+    outline: none;
+  
+  }

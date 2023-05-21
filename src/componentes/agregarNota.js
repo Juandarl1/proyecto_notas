@@ -4,12 +4,29 @@ const Agregarnota=({mantenernota})=>{
     const [notaTexto,setNotaTexto]=useState('');
 
     const handleChange=(event)=>{
-        setNotaTexto(event.target.value);
+        if (limiteCarateres-event.target.value.length>=0){
+            setNotaTexto(event.target.value);
+        }
+        
     }
 
+    
+    // const handleChange=(event)=>{
+    //     if (event.target.value.length<=limiteCarateres){
+    //         setNotaTexto(event.target.value);
+    //     }
+        
+    // }
+
     const mantenerclickGuardado=()=>{
-        mantenernota(notaTexto)
+        if(notaTexto.trim().length>0){
+            mantenernota(notaTexto)
+            setNotaTexto('')
+        }
+        
     }
+
+    const limiteCarateres=200;
     return(
         <div className="nota_nueva">
             <textarea 
@@ -19,7 +36,7 @@ const Agregarnota=({mantenernota})=>{
             value={notaTexto}
             onChange={handleChange}></textarea>
             <div className='nota-footer'>
-                <small>200 caracteres</small>
+                <small>{limiteCarateres-notaTexto.length} caracteres</small>
                 <button className="Guardar" onClick={mantenerclickGuardado}>guardar</button>
         </div>
     </div>
