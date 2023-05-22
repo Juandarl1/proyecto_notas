@@ -14,19 +14,17 @@ const App=()=> {
 
   useEffect(()=>{
     const notasGuardadas = JSON.parse(
-      localStorage.getItem('Notas-sesion-guardadas')
+      localStorage.getItem('react-notes-app-data')
     );
     if (notasGuardadas){
       setNotes(notasGuardadas);
     }
-
-  },[]);
-  
+  },[]); 
   useEffect(()=>{
-    localStorage.setItem('Notas-sesion-guardadas', JSON.stringify(notes)
+    localStorage.setItem('react-notes-app-data', JSON.stringify(notes)
     );
-  }, [notes]
-  );
+  }, [notes]);
+
 
   
 

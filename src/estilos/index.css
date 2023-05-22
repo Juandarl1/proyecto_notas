@@ -1,18 +1,20 @@
 
 body {
   margin: 0;
-  background-color: #000000; /* color de fondo más llamativo */
+  background-color: #9097c0; /* color de fondo más llamativo */
   font-family: "Lucida Console", "Courier New", monospace;
     -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
   border: 5px solid #ffe6e6;
   padding: 10px;
- 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  animation: aparecer 5s forwards;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -36,7 +38,8 @@ code {
  display:grid;
  grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  animation: ondular 2s infinite alternate;
+  /* animation: ondular 2s infinite alternate; */
+  animation: aparecer 1s forwards;
 }
 
  
@@ -57,6 +60,8 @@ h1{
   padding: 10px;
   border-radius: 20px;
   color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 h2{
@@ -64,12 +69,14 @@ h2{
   flex-direction: column;
   align-items: center;
   color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
 }
 
 
   
 
-/**/
+/*Sector de animaciones*/
 .logo {
   display: flex;
   align-items: center;
@@ -82,6 +89,14 @@ h2{
   text-decoration: none;
   animation: bounce 1s infinite;
   animation: ondular 2s infinite alternate;
+  animation: aparecer 1s forwards;
+}
+
+ 
+
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 

@@ -8,11 +8,12 @@
     border-radius: 10px ;
     white-space: pre-wrap;
     color:black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
   }
   
   textarea{
     border: none;
-    resize: none;
+    resize: auto;
     background: #67d7cc;
   }
   
@@ -27,6 +28,9 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
   }
   
   .Guardar:hover{
@@ -40,6 +44,7 @@
     color: red;
     transform: scale(1.1);
     cursor: pointer;
+    
   }
   
   .container {
@@ -51,20 +56,32 @@
       min-height: 100vh;
   }
   
-  .nota-lista{
-    background: #f5f68a;
-    padding: 1rem;
-    height:170px;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column; 
-    border-radius: 10px ;
-    white-space: pre-wrap;
+  .nota-lista {
+  background: #f5f68a;
+  padding: 1rem;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  transition: background-color 1s ease-out;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+  .nota-lista:hover{
+    /* background-color: #f5f68a;*/
+    background-color: #eceba7;
+    transform: scale(1.1);
+    cursor:crosshair;
   }
   
   .nota-footer{
     display:flex;
     align-items: center;
     justify-content: space-between; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
   
